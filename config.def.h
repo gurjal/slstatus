@@ -68,5 +68,5 @@ static const struct arg args[] = {
 	{ cpu_perc, "cpu: %s% / ", "" },
 	{ ram_perc, "mem: %s% / ", "" },
 	{ run_command, "vol: %s% / ", "echo $(pamixer --get-volume)" },
-	{ datetime, "%s",           "%m.%d.%C / %I:%M %p" },
+	{ datetime, "%s",           "%m.%d.%C / %I:%M %p " },
 };
