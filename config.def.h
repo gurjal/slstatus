@@ -65,5 +65,13 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ datetime, "%s",           "%F %T" },
+	//{ datetime, "%s",           "%I:%M %p ( %Y.%d.%m ( " }, // 12hr clock
+	{ datetime, "\\t %s ","%H:%M" }, // 24hr clock
+	{ cpu_perc, "\\c %s ", "" },
+	{ ram_perc, "\\r %s ", "" },
+	{ run_command, "\\v %s ", "printf \%02d $(pulsemixer --get-volume | cut -d' ' -f1)" },
+	{ battery_perc, "\\b %s" , "BAT0"},
+	{ battery_state, "%s " , "BAT0"},
+	{ datetime, "\\d %s ", "%a %m.%d" }, // 24hr clock
+	{ wifi_essid, "\\n %s", "wlp0s20f3" },
 };
