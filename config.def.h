@@ -74,5 +74,5 @@ static const struct arg args[] = {
 	{ battery_state, "%s /" , "BAT0"},
 	{ run_command, "  %s /", "printf \%02d $(pulsemixer --get-volume | cut -d' ' -f1)" },
 	{ datetime, "  %s /", "%a %m.%d %H:%M" }, // 24hr clock
-	{ wifi_essid, "  %s ", "wlp0s20f3" },
+	{ wifi_essid, "  %s", "wlp0s20f3" },
 };
