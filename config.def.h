@@ -69,7 +69,7 @@ static const struct arg args[] = {
 	//{ datetime, "%s",           "%I:%M %p ( %Y.%d.%m ( " }, // 12hr clock
 	/* { datetime, " %s ","" }, // 24hr clock */
 	{ cpu_perc, "  %s", "" },
-	{ ram_perc, " ▦r %s /", "" },
+	{ ram_perc, " ▦ %s /", "" },
 	{ battery_perc, "  %s" , "BAT0"},
 	{ battery_state, "%s /" , "BAT0"},
 	{ run_command, "  %s /", "printf \%02d $(pulsemixer --get-volume | cut -d' ' -f1)" },
