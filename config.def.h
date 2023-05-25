@@ -67,6 +67,7 @@ static const struct arg args[] = {
 	/* function format          argument */
 	//{ datetime, "%s",           "%I:%M %p ( %Y.%d.%m ( " }, // 12hr clock
 	/* { datetime, " %s ","" }, // 24hr clock */
+	{ media_mpd_stat, "%s ", "" },
 	{ cpu_perc, " %s", "" },
 	{ ram_perc, " ▦ %s", "" },
 	{ battery_perc, "  %s" , "BAT0"},
