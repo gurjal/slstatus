@@ -67,11 +67,11 @@ static const struct arg args[] = {
 	/* function format          argument */
 	//{ datetime, "%s",           "%I:%M %p ( %Y.%d.%m ( " }, // 12hr clock
 	/* { datetime, " %s ","" }, // 24hr clock */
-	{ cpu_perc, "  %s", "" },
-	{ ram_perc, " ▦ %s /", "" },
+	{ cpu_perc, " %s", "" },
+	{ ram_perc, " ▦ %s", "" },
 	{ battery_perc, "  %s" , "BAT0"},
-	{ battery_state, "%s /" , "BAT0"},
-	{ run_command, "  %s /", "printf \%02d $(pulsemixer --get-volume | cut -d' ' -f1)" },
-	{ datetime, "  %s /", "%a %m.%d %H:%M" }, // 24hr clock
+	{ battery_state, "%s" , "BAT0"},
+	{ run_command, "  %s", "printf \%02d $(pulsemixer --get-volume | cut -d' ' -f1)" },
+	{ datetime, "  %s", "%a %m.%d %H:%M" }, // 24hr clock
 	{ wifi_essid, "  %s", "wlp0s20f3" },
 };
